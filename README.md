@@ -1,4 +1,5 @@
-androidnico
+niconico非公式アプリ Android試作版
 ===========
 
-試作してた
+試作してたバージョン
+絶対に動かない
