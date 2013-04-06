@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="fill_parent" android:id="@+id/layoutest" android:orientation="vertical"
+  android:background="#FFFFFF">
+
+    <FrameLayout android:layout_width="match_parent" android:id="@+id/frameLayout1" android:layout_height="match_parent" android:layout_margin="10sp">
+
+	    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_gravity="center">
+		    <ImageView android:id="@+id/back"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="bottom"
+		        android:scaleType="centerInside"
+		        android:src="@drawable/background"
+		        android:adjustViewBounds="true"
+		        android:cropToPadding="true"
+		        android:paddingLeft="200px"
+			/>
+		</LinearLayout>
+
+
+	    <ViewFlipper
+	        android:id="@+id/flipper"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+			>
+
+	        <LinearLayout
+	            android:id="@+id/layout_first"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:orientation="vertical">
+
+	            <TextView android:text="Rank, Search" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="40sp" android:textColor="#408BEF"></TextView>
+			    <EditText android:id="@+id/editText1" android:layout_height="wrap_content" android:layout_width="match_parent" android:text="検索" android:focusable="true" android:textColor="#408BEF" android:singleLine="true" android:visibility="visible" />
+
+			    <ListView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/listView1" android:fadingEdge="none" android:divider="#FFFFFF" android:scrollingCache="false" />
+
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:id="@+id/layout_second"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:orientation="vertical">
+
+	            <TextView android:text="List" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="40sp" android:textColor="#408BEF" />
+				<TextView android:id="@+id/resultText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize ="16sp" android:textColor="#58B1FF" />
+
+			    <ListView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/listView2"  android:fadingEdge="none" android:divider="#FFFFFF" android:scrollingCache="false" />
+
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:id="@+id/layout_third"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:orientation="vertical">
+
+	            <TextView android:text="MyList" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="40sp" android:textColor="#408BEF"></TextView>
+
+				<ListView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/listView3" android:fadingEdge="none" android:divider="#FFFFFF" android:scrollingCache="false" />
+
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:id="@+id/layout_fourth"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:orientation="vertical">
+
+	            <TextView android:text="Setting" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="40sp" android:textColor="#408BEF"></TextView>
+
+				<EditText android:id="@+id/mailText" android:inputType="textEmailAddress" android:layout_height="wrap_content" android:layout_width="match_parent" android:text="メールアドレス" android:focusable="true" android:textColor="#408BEF" android:singleLine="true" android:visibility="visible" />
+				<EditText android:id="@+id/passText" android:inputType="textPassword" android:layout_height="wrap_content" android:layout_width="match_parent" android:text="パスワード" android:focusable="true" android:textColor="#408BEF" android:singleLine="true" android:visibility="visible" />
+
+				<Button android:text="ログイン" android:id="@+id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="right"></Button>
+
+	        </LinearLayout>
+
+
+	    </ViewFlipper>
+
+    </FrameLayout>
+</LinearLayout>
